@@ -34,7 +34,6 @@ createResultEl = ( result ) ->
   $root.append $title, $summary, $content
 
 displayResults = ( data ) ->
-  $results.empty()
   $results.removeClass 'loading'
   results = data.responseData.results
   if results.length == 0
@@ -48,6 +47,7 @@ displayResults = ( data ) ->
 
 requestData = ( event ) ->
   event.preventDefault()
+  $results.empty()
   $results.addClass 'loading'
   query = $( 'input[name="query"]' ).val()
   $.getJSON( GOOGLE_URL,

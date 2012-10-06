@@ -43,7 +43,6 @@
 
   displayResults = function(data) {
     var $sorryBroResponse, results;
-    $results.empty();
     $results.removeClass('loading');
     results = data.responseData.results;
     if (results.length === 0) {
@@ -60,6 +59,7 @@
   requestData = function(event) {
     var query;
     event.preventDefault();
+    $results.empty();
     $results.addClass('loading');
     query = $('input[name="query"]').val();
     return $.getJSON(GOOGLE_URL, {

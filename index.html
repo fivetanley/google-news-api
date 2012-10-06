@@ -1,30 +1,39 @@
 <!doctype html>
 
 <head>
-  <link href="/css/reset.css" rel="stylesheet"/>
-  <link href="/css/styles.css" rel="stylesheet"/>
+  <link href='/css/reset.css' rel='stylesheet'/>
+  <link href='/css/styles.css' rel='stylesheet'/>
 </head>
 
 <body>
 
-<div class="container">
+<div class='container'>
 
 <nav class='navigation'>
-  <form name="search" action="" method="GET">
+  <form name='search'>
     <label for='query'>
-      <span class="prompt">Google News</span>
+      <span class='prompt'>Google News</span>
     </label>
-    <input type='text' name='query' value="Search..." autofocus/>
+    <input type='text' name='query' value='Search...' autofocus/>
     <button type='submit'>Go!</button>
   </form>
 </nav>
 
-<section class="results"></section>
-
+<section class='results'></section>
+<footer>
+  <span>From <a href='http://twitter.com/fivetanley'>fivetanley</a>.</span>
+  <span>Colorscheme is totally stolen from
+    <a href='http://www.colourlovers.com/palette/1930/cheer_up_emo_kid'>Cheer Up You Emo Kid</a>.
+  </span>
+  <span>
+    <a href='http://subtlepatterns.com/'>SubtlePatterns</a> provided the subtle pattern.
+  </span>
+  <span>
+    Data is taken from Google News.
+  </span>
+</footer>
 </div>
-
-
-<script src="/js/jquery.js"></script>
-<script src="/js/google_news.js"></script>
+<script src='/js/jquery.js'></script>
+<script src='/js/google_news.js'></script>
 
 </body>
