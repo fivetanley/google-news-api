@@ -1,0 +1,142 @@
+body {
+  background: url('/css/noisy_grid.png');
+}
+.container {
+  position: relative;
+  min-width: 500px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 175%;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  height: 40px;
+  margin: 0 auto;
+  padding: 5px 5px 5px 5px;
+  background-image: -webkit-linear-gradient( #556270, #3C454F );
+  box-shadow: 1px 1px 1px 0 #ccc;
+}
+
+.prompt {
+  font-family: Helvetica, Arial, sans-serif;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+  text-shadow: 3px 3px 0 black;
+  letter-spacing: 1px;
+}
+
+.navigation input {
+  font: inherit;
+  font-size: 85%;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: white;
+  color: white;
+  background-color: #4ECDC4;
+  outline: none;
+  padding-left: 5px;
+}
+
+.navigation button {
+  font:inherit;
+  border: none;
+  background-color: #C44D58;
+  border-radius: 5px;
+  color: white;
+}
+
+.results {
+  margin-top: 50px;
+  padding: 10px 5px 10px 5px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.loading {
+  height: 200px;
+  background: white;
+  background: url( '/css/spinner.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.results article {
+  background: white;
+  display: block;
+  overflow: hidden;
+  padding: 1% 1% 1% 1%;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #F3F3F3;
+  box-shadow: -5px 5px 5px 0 #ccc;
+  width: 100%;
+}
+
+.results h3 a {
+  color: #4ECDC4;
+  text-decoration: none;
+  text-shadow: 10 10;
+}
+
+.results h3 {
+  font-family: Georgia, serif;
+  padding-bottom: 1%;
+}
+
+.results img {
+  float: left;
+  display: block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  padding-bottom: 0;
+}
+
+.summary {
+  font-size: 60%;
+  display: block;
+  clear: left;
+  line-height: 1;
+}
+
+.summary a {
+  color: #C44D58;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.summary a::after {
+  color: black;
+  font-weight: normal;
+  content: ')';
+}
+
+.summary a::before {
+  color: black;
+  font-weight: normal;
+  content: '(';
+}
+
+.info time {
+  font-family: Impact, sans-serif;
+  font-size: 60%;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.info {
+  margin-bottom: 15px;
+}
+
+.publisher {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 80%;
+  color: #FF6B6B;
+  margin-bottom: 0;
+}
