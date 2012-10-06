@@ -39,7 +39,7 @@ displayResults = ( data ) ->
   results = data.responseData.results
   if results.length == 0
     $sorryBroResponse = $ """
-    <h1 class='error'>Sorry bro, no search results found. :[</h1>
+    <h1 class='error'>Sorry dude, no search results found. :[</h1>
     """
     return $results.append( $sorryBroResponse )
   results.forEach ( result ) ->
