@@ -6,8 +6,9 @@ $results = $( '.results' ).first()
 getDateString = ( date ) ->
   date = new Date Date.parse date
   year = date.getFullYear()
-  month = date.getMonth()
-  day = date.getDate()
+  # lol zero-indexed things
+  month = date.getMonth() + 1
+  day = date.getDate() + 1
   if Number(month) < 10 then month = '0' + month
   if Number(day) < 10 then day = '0' + day
   "#{year}/#{month}/#{day}"
@@ -38,7 +39,7 @@ displayResults = ( data ) ->
   results = data.responseData.results
   if results.length == 0
     $sorryBroResponse = $ """
-    <h1 class='error'>Sorry bro, no search results found. :[</h1>
+    <h1 class='error'>Sorry dude, no search results found. :[</h1>
     """
     return $results.append( $sorryBroResponse )
   results.forEach ( result ) ->

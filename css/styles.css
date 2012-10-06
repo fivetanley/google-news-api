@@ -1,5 +1,5 @@
 body {
-  background: url('/css/noisy_grid.png');
+  background: url('noisy_grid.png');
 }
 
 .container {
@@ -63,7 +63,7 @@ body {
 .loading {
   height: 200px;
   background: white;
-  background: url( '/css/spinner.gif');
+  background: url( 'spinner.gif');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -150,6 +150,10 @@ body {
 
 .info {
   margin-bottom: 15px;
+}
+
+.error {
+  text-align: center;
 }
 
 .publisher {
