@@ -10,8 +10,8 @@
     var day, month, year;
     date = new Date(Date.parse(date));
     year = date.getFullYear();
-    month = date.getMonth();
-    day = date.getDate();
+    month = date.getMonth() + 1;
+    day = date.getDate() + 1;
     if (Number(month) < 10) {
       month = '0' + month;
     }
