@@ -46,7 +46,7 @@
     $results.removeClass('loading');
     results = data.responseData.results;
     if (results.length === 0) {
-      $sorryBroResponse = $("<h1 class='error'>Sorry bro, no search results found. :[</h1>");
+      $sorryBroResponse = $("<h1 class='error'>Sorry dude, no search results found. :[</h1>");
       return $results.append($sorryBroResponse);
     }
     return results.forEach(function(result) {

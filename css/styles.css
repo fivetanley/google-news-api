@@ -21,6 +21,10 @@ body {
   margin: 0 auto;
   padding: 5px 5px 5px 5px;
   background-image: -webkit-linear-gradient( #556270, #3C454F );
+  background-image: -moz-linear-gradient( #556270, #3C454F );
+  background-image: -ms-linear-gradient( #556270, #3C454F );
+  background-image: -o-linear-gradient( #556270, #3C454F );
+  background-image: linear-gradient( #556270, #3C454F );
   box-shadow: 1px 1px 1px 0 #ccc;
 }
 
