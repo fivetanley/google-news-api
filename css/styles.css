@@ -17,8 +17,6 @@ body {
   width: 100%;
   text-align: center;
   z-index: 1;
-  height: 40px;
-  margin: 0 auto;
   padding: 5px 5px 5px 5px;
   background-image: -webkit-linear-gradient( #556270, #3C454F );
   background-image: -moz-linear-gradient( #556270, #3C454F );
